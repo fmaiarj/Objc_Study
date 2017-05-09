@@ -6,12 +6,19 @@
 //  Copyright © 2017 KronAutomacao. All rights reserved.
 //
 
+
 #import <UIKit/UIKit.h>
+#import "BNRPerson.h"
+#import "BNREmployee.h"
+#import "BNRStockHolding.h"
+#import "BNRForeignStockHolding.h"
+#import "BNRAssets.h"
+#import "Pessoa.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) UITextView *txtView;
 
 @end
 

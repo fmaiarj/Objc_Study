@@ -15,6 +15,13 @@
 		5E2C88021EA7A63100DB0074 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2C88001EA7A63100DB0074 /* LaunchScreen.storyboard */; };
 		5E2C880D1EA7A63100DB0074 /* Objc_StudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C880C1EA7A63100DB0074 /* Objc_StudyTests.m */; };
 		5E2C88181EA7A63100DB0074 /* Objc_StudyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C88171EA7A63100DB0074 /* Objc_StudyUITests.m */; };
+		5E2C88271EA7A69F00DB0074 /* BNRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C88261EA7A69F00DB0074 /* BNRPerson.m */; };
+		5E2C882A1EA7C1FA00DB0074 /* BNREmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C88291EA7C1FA00DB0074 /* BNREmployee.m */; };
+		5E2C882D1EA7CEA900DB0074 /* BNRStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C882C1EA7CEA900DB0074 /* BNRStockHolding.m */; };
+		5E2C88301EA7D1B900DB0074 /* BNRForeignStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C882F1EA7D1B900DB0074 /* BNRForeignStockHolding.m */; };
+		5E2C88331EA7E52700DB0074 /* BNRAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C88321EA7E52700DB0074 /* BNRAssets.m */; };
+		5EFC9BD11EBB90080080D34A /* BNRLOgger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFC9BD01EBB90080080D34A /* BNRLOgger.m */; };
+		5EFFFA331EAFB19C00AE8A75 /* Pessoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFFFA321EAFB19C00AE8A75 /* Pessoa.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E1F58DA1EB255AD004B1ADC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		5E2C87EF1EA7A63100DB0074 /* Objc_Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Objc_Study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2C87F31EA7A63100DB0074 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5E2C87F51EA7A63100DB0074 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +59,20 @@
 		5E2C88131EA7A63100DB0074 /* Objc_StudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Objc_StudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2C88171EA7A63100DB0074 /* Objc_StudyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Objc_StudyUITests.m; sourceTree = "<group>"; };
 		5E2C88191EA7A63100DB0074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E2C88251EA7A69F00DB0074 /* BNRPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRPerson.h; sourceTree = "<group>"; };
+		5E2C88261EA7A69F00DB0074 /* BNRPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRPerson.m; sourceTree = "<group>"; };
+		5E2C88281EA7C1FA00DB0074 /* BNREmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNREmployee.h; sourceTree = "<group>"; };
+		5E2C88291EA7C1FA00DB0074 /* BNREmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNREmployee.m; sourceTree = "<group>"; };
+		5E2C882B1EA7CEA900DB0074 /* BNRStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRStockHolding.h; sourceTree = "<group>"; };
+		5E2C882C1EA7CEA900DB0074 /* BNRStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRStockHolding.m; sourceTree = "<group>"; };
+		5E2C882E1EA7D1B900DB0074 /* BNRForeignStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRForeignStockHolding.h; sourceTree = "<group>"; };
+		5E2C882F1EA7D1B900DB0074 /* BNRForeignStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRForeignStockHolding.m; sourceTree = "<group>"; };
+		5E2C88311EA7E52700DB0074 /* BNRAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRAssets.h; sourceTree = "<group>"; };
+		5E2C88321EA7E52700DB0074 /* BNRAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRAssets.m; sourceTree = "<group>"; };
+		5EFC9BCF1EBB90080080D34A /* BNRLOgger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRLOgger.h; sourceTree = "<group>"; };
+		5EFC9BD01EBB90080080D34A /* BNRLOgger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRLOgger.m; sourceTree = "<group>"; };
+		5EFFFA311EAFB19C00AE8A75 /* Pessoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pessoa.h; sourceTree = "<group>"; };
+		5EFFFA321EAFB19C00AE8A75 /* Pessoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pessoa.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +103,7 @@
 		5E2C87E61EA7A63100DB0074 = {
 			isa = PBXGroup;
 			children = (
+				5E1F58DA1EB255AD004B1ADC /* PrefixHeader.pch */,
 				5E2C87F11EA7A63100DB0074 /* Objc_Study */,
 				5E2C880B1EA7A63100DB0074 /* Objc_StudyTests */,
 				5E2C88161EA7A63100DB0074 /* Objc_StudyUITests */,
@@ -101,15 +124,29 @@
 		5E2C87F11EA7A63100DB0074 /* Objc_Study */ = {
 			isa = PBXGroup;
 			children = (
+				5E2C88311EA7E52700DB0074 /* BNRAssets.h */,
+				5E2C88321EA7E52700DB0074 /* BNRAssets.m */,
 				5E2C87F51EA7A63100DB0074 /* AppDelegate.h */,
 				5E2C87F61EA7A63100DB0074 /* AppDelegate.m */,
 				5E2C87F81EA7A63100DB0074 /* ViewController.h */,
+				5EFFFA311EAFB19C00AE8A75 /* Pessoa.h */,
+				5EFC9BCF1EBB90080080D34A /* BNRLOgger.h */,
+				5EFC9BD01EBB90080080D34A /* BNRLOgger.m */,
+				5EFFFA321EAFB19C00AE8A75 /* Pessoa.m */,
 				5E2C87F91EA7A63100DB0074 /* ViewController.m */,
 				5E2C87FB1EA7A63100DB0074 /* Main.storyboard */,
 				5E2C87FE1EA7A63100DB0074 /* Assets.xcassets */,
 				5E2C88001EA7A63100DB0074 /* LaunchScreen.storyboard */,
 				5E2C88031EA7A63100DB0074 /* Info.plist */,
 				5E2C87F21EA7A63100DB0074 /* Supporting Files */,
+				5E2C88251EA7A69F00DB0074 /* BNRPerson.h */,
+				5E2C88261EA7A69F00DB0074 /* BNRPerson.m */,
+				5E2C88281EA7C1FA00DB0074 /* BNREmployee.h */,
+				5E2C88291EA7C1FA00DB0074 /* BNREmployee.m */,
+				5E2C882B1EA7CEA900DB0074 /* BNRStockHolding.h */,
+				5E2C882C1EA7CEA900DB0074 /* BNRStockHolding.m */,
+				5E2C882E1EA7D1B900DB0074 /* BNRForeignStockHolding.h */,
+				5E2C882F1EA7D1B900DB0074 /* BNRForeignStockHolding.m */,
 			);
 			path = Objc_Study;
 			sourceTree = "<group>";
@@ -274,8 +311,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E2C87FA1EA7A63100DB0074 /* ViewController.m in Sources */,
+				5EFFFA331EAFB19C00AE8A75 /* Pessoa.m in Sources */,
 				5E2C87F71EA7A63100DB0074 /* AppDelegate.m in Sources */,
 				5E2C87F41EA7A63100DB0074 /* main.m in Sources */,
+				5EFC9BD11EBB90080080D34A /* BNRLOgger.m in Sources */,
+				5E2C88331EA7E52700DB0074 /* BNRAssets.m in Sources */,
+				5E2C88301EA7D1B900DB0074 /* BNRForeignStockHolding.m in Sources */,
+				5E2C882A1EA7C1FA00DB0074 /* BNREmployee.m in Sources */,
+				5E2C88271EA7A69F00DB0074 /* BNRPerson.m in Sources */,
+				5E2C882D1EA7CEA900DB0074 /* BNRStockHolding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +551,7 @@
 				5E2C881E1EA7A63100DB0074 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E2C881F1EA7A63100DB0074 /* Build configuration list for PBXNativeTarget "Objc_StudyTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +560,7 @@
 				5E2C88211EA7A63100DB0074 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E2C88221EA7A63100DB0074 /* Build configuration list for PBXNativeTarget "Objc_StudyUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +569,7 @@
 				5E2C88241EA7A63100DB0074 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
