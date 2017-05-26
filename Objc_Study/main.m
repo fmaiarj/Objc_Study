@@ -9,28 +9,74 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "BNRLOgger.h"
+#import "ViewController.h"
+
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
       
-        BNRLOgger *logger = [[BNRLOgger alloc] init];
-      
-        
-#pragma modificadao-HelperObject
         
         
-        NSURL *url = [NSURL URLWithString:@"http://www.gutenberg.org/files/205/205-h/205-h.htm#linkW5"];
+        //Array base
         
-        NSURLRequest *req = [NSURLRequest requestWithURL:url];
+        NSArray<NSString*> *originalStrings = @[@"SauerKraut", @"Rayyygun", @"Big Nerd Ranch", @"Mississippi"];
         
-        __unused NSURLConnection *fetchConn = [[NSURLConnection alloc] initWithRequest:req delegate:logger startImmediately:YES];
+        NSLog(@"Original Strings: %@", originalStrings);
+        
+        NSMutableArray *devowelizedStrings = [NSMutableArray array];
+        
+        NSArray *vowels = @[@"a", @"e", @"i", @"o", @"u"];
         
         
-        __unused NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:logger selector:@selector(updateLastTime:) userInfo:nil repeats:YES];
+        // Declarando the block variable
         
-        NSLog(@"Iniciado o processo!");
+        void (^devowelizer)(id, NSUInteger, BOOL *);
         
-        [[NSRunLoop currentRunLoop] run];
+        
+        // Compose a block and assingn it to the variable
+        
+        devowelizer = ^(id string, NSUInteger i, BOOL *stop) {
+            
+            
+            // Declarando `y` para busca na String declarada
+            
+            NSRange yRange = [string rangeOfString:@"yyy" options:NSCaseInsensitiveSearch];
+            
+            NSLog(@" Comprimento da Palavra -> %lu" , NSNotFound);
+            
+            // Procurando pela ocorrencia de y na String
+            
+            if (yRange.location != NSNotFound) {
+                
+                *stop = YES; // Previne futuras iterações
+                return ; // Fim da iteração
+            }
+            
+            
+            
+            NSMutableString *newString = [NSMutableString stringWithString:string];
+            
+            //Iterate over the array of vowels, replacing occurrences of each
+            //with an empty string
+            
+            for (NSString *s in vowels) {
+                
+                NSRange fullRange = NSMakeRange(0, [newString length]);
+                
+                [newString replaceOccurrencesOfString:s withString:@"" options:NSCaseInsensitiveSearch range:fullRange];
+            }
+            
+            [devowelizedStrings addObject:newString];
+        
+        }; // End of Block assignment
+        
+        
+        // Iterate over the array with your block
+        
+        
+        [originalStrings enumerateObjectsUsingBlock:devowelizer];
+        NSLog(@"devowelized strings: %@", devowelizedStrings);
+        
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

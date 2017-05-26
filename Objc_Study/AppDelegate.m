@@ -17,11 +17,59 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+   
+    
+    
+    UIScreen *tela = [UIScreen mainScreen];
+    
+    CGRect dim = [tela bounds];
+    
+    self.window =  [[UIWindow alloc] initWithFrame:dim];
+    
+    ViewController *vc = [ViewController new];
+    
+    self.window.rootViewController = vc;
+    
+    
+    [self.window makeKeyAndVisible];
     
     
     
+    BNRLOgger *log = [[BNRLOgger alloc] init];
+    
+    // POST NOTIFICATION
     
     
+    NSString *nome = [NSString stringWithFormat:@"Felipe Maia"];
+    
+    NSDictionary *params = [NSDictionary dictionaryWithObject:nome forKey:@"nome"];
+    
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"MenssagemFelipe" object:nil userInfo:params];
+    
+    
+    // NOTIFICATION MODEL
+    
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:log selector:@selector(zoneChange:) name:NSSystemTimeZoneDidChangeNotification object:nil];
+    
+    
+    log.delegate = vc;
+    
+    
+   // NSURL *url = [NSURL URLWithString:@"http://www.gutenberg.org/cache/epub/205/pg205.txt"];
+    
+   // NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    
+   // __unused NSURLConnection *fetchCon = [[NSURLConnection alloc] initWithRequest:req delegate:log startImmediately:YES];
+    
+    NSLog(@"Finalizado !");
+    
+    log = nil;
+    
+    
+    //[[NSRunLoop currentRunLoop] run];
     
     return YES;
 }

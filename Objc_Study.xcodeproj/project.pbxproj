@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E20087B1ECB2529007DCE41 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E20087A1ECB2529007DCE41 /* ViewController.xib */; };
 		5E2C87F41EA7A63100DB0074 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C87F31EA7A63100DB0074 /* main.m */; };
 		5E2C87F71EA7A63100DB0074 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C87F61EA7A63100DB0074 /* AppDelegate.m */; };
 		5E2C87FA1EA7A63100DB0074 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2C87F91EA7A63100DB0074 /* ViewController.m */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		5E1F58DA1EB255AD004B1ADC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5E20087A1ECB2529007DCE41 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		5E2C87EF1EA7A63100DB0074 /* Objc_Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Objc_Study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2C87F31EA7A63100DB0074 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5E2C87F51EA7A63100DB0074 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		5E2C882F1EA7D1B900DB0074 /* BNRForeignStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRForeignStockHolding.m; sourceTree = "<group>"; };
 		5E2C88311EA7E52700DB0074 /* BNRAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRAssets.h; sourceTree = "<group>"; };
 		5E2C88321EA7E52700DB0074 /* BNRAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRAssets.m; sourceTree = "<group>"; };
+		5EEC6DEB1ECF785A002D40A5 /* Objc_Study-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objc_Study-Bridging-Header.h"; sourceTree = "<group>"; };
 		5EFC9BCF1EBB90080080D34A /* BNRLOgger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRLOgger.h; sourceTree = "<group>"; };
 		5EFC9BD01EBB90080080D34A /* BNRLOgger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRLOgger.m; sourceTree = "<group>"; };
 		5EFFFA311EAFB19C00AE8A75 /* Pessoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pessoa.h; sourceTree = "<group>"; };
@@ -129,6 +132,7 @@
 				5E2C87F51EA7A63100DB0074 /* AppDelegate.h */,
 				5E2C87F61EA7A63100DB0074 /* AppDelegate.m */,
 				5E2C87F81EA7A63100DB0074 /* ViewController.h */,
+				5E20087A1ECB2529007DCE41 /* ViewController.xib */,
 				5EFFFA311EAFB19C00AE8A75 /* Pessoa.h */,
 				5EFC9BCF1EBB90080080D34A /* BNRLOgger.h */,
 				5EFC9BD01EBB90080080D34A /* BNRLOgger.m */,
@@ -147,6 +151,7 @@
 				5E2C882C1EA7CEA900DB0074 /* BNRStockHolding.m */,
 				5E2C882E1EA7D1B900DB0074 /* BNRForeignStockHolding.h */,
 				5E2C882F1EA7D1B900DB0074 /* BNRForeignStockHolding.m */,
+				5EEC6DEB1ECF785A002D40A5 /* Objc_Study-Bridging-Header.h */,
 			);
 			path = Objc_Study;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 				TargetAttributes = {
 					5E2C87EE1EA7A63100DB0074 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					5E2C88071EA7A63100DB0074 = {
@@ -285,6 +291,7 @@
 			files = (
 				5E2C88021EA7A63100DB0074 /* LaunchScreen.storyboard in Resources */,
 				5E2C87FF1EA7A63100DB0074 /* Assets.xcassets in Resources */,
+				5E20087B1ECB2529007DCE41 /* ViewController.xib in Resources */,
 				5E2C87FD1EA7A63100DB0074 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,10 +475,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Objc_Study/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.livro.Objc-Study";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Objc_Study/Objc_Study-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -479,10 +490,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Objc_Study/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.livro.Objc-Study";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Objc_Study/Objc_Study-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

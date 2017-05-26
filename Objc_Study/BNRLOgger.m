@@ -11,6 +11,8 @@
 @implementation BNRLOgger
 
 
+@synthesize delegate;
+
 
 - (void) connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
     
@@ -40,8 +42,9 @@
     NSLog(@"string has %lu charactesres" , [str length]);
     
     
-    
     NSLog(@"Dados salvos no local");
+    
+    NSLog(@"%@", [delegate pathOfLogger:@"Felipe Maia" indexOfPath:15]);
     
 }
 
@@ -78,6 +81,27 @@
     NSDate *now = [NSDate date];
     [self setLastTime:now];
     NSLog(@"Just set time to %@", self.lastTimeString);
+}
+
+
+-(void)zoneChange:(NSNotification *)note {
+    
+    
+    NSDictionary *dados = note.userInfo;
+    
+    NSString *nome = [dados valueForKey:@"nome"];
+    
+    NSLog(@"The system time zone has changed! --->>> %@" , nome);
+    
+}
+
+
+- (void)dealloc {
+    
+    NSLog(@"BNRLogger ->>>>> DESALOCANDO <<<< ----");
+    
+    sleep(2);
+    
 }
 
 @end

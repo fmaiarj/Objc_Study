@@ -7,6 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+@protocol BNRLoggerProtocol <NSObject>
+
+@optional
+- (NSString *) pathOfLogger:(NSString *) userName
+                indexOfPath:(NSInteger) index;
+- (NSDate *) shouldChangeLastTime;
+
+
+@end
+
+
 
 @interface BNRLOgger : NSObject <NSURLSessionDataDelegate, NSURLConnectionDataDelegate>
 {
@@ -16,8 +29,14 @@
 
 @property (nonatomic) NSDate *lastTime;
 
+// Verifica se um objeto esta delegado para executar a ação
+@property (weak) id <BNRLoggerProtocol> delegate;
+
 -(NSString *) lastTimeString;
 -(void) updateLastTime:(NSTimer *)t;
+
+// Chamado via Target-Action (SEL)
+-(void) zoneChange:(NSString *)nome;
 
 
 @end

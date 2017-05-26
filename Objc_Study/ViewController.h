@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BNRLOgger.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <BNRLoggerProtocol>
+
+
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 
 @end
